@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.js"
+      integrity="sha512-x5JY7KTULoGmcgxguKf5p4i3wfx7qXlY3OMjqez4Pj8BPoMn4krRQmwDtOwF81F+/9Be+jvhBsKOIaPPZmRelQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.css"
+      integrity="sha512-6C+r1OJlC3qBPXIO1VNXP4c9KUSnF4BTBZXiPL8/oB5VqIYl76jlaH57ZJPBoaPENhcrvOZpEQKDVxSVzi3/1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: arial, helvetica;
+        line-height: 1.4;
+      }
+
+      .title {
+        font-size: 6em;
+        font-size: calc(2em + 1vw);
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-right: 48px;
+        padding-left: 24px;
+      }
+
+      .lead {
+        font-size: calc(1em + 1vw);;
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+      }
+
+      .action {
+        border-radius: 12px;
+        padding: 16px 24px;
+        background: #fff;
+        color: #3f61ff;
+        display: block;
+        text-decoration: none;
+        font-size: 1.4em;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      /* Backgrounds colors for sections */
+      .fp-section:nth-child(1) {
+        background-image: linear-gradient(128deg, #40afff, #3f61ff);
+      }
+
+      .fp-section:nth-child(2) {
+        background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+      }
+
+      .fp-section:nth-child(3) {
+        background-image: linear-gradient(128deg, #fc40ff, #543fff);
+      }
+
+      .fp-section:nth-child(4) {
+        background-image: linear-gradient(128deg, #fc40ff, #543fff);
+      }
+
+      .fp-section:nth-child(5) {
+        background-image: linear-gradient(128deg, #fc40ff, #543fff);
+      }
+      .fp-section:nth-child(6) {
+        background-image: linear-gradient(128deg, #fc40ff, #543fff);
+      }
+      .fp-section:nth-child(7) {
+        background-image: linear-gradient(128deg, #333, #111);
+      }
+
+      /* Overwriting styles for the navigation dots */
+      #fp-nav ul li a span,
+      .fp-slidesNav ul li a span {
+        background: white;
+      }
+
+      /* Uncomment to overwrite the styles of the tooltips too */
+
+      .fp-tooltip {
+        font-size: 1.2em !important;
+        margin-right: 10px;
+        margin-top: -8px;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 4px 12px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section">
+        <div class="section-content">
+          <div class="title">Автотесты PRO</div>
+          <div class="lead">
+            Курс по автоматизации тестирования для опытных разработчиков и
+            тимлидов
+          </div>
+          <ul>
+            <li>
+              научим решать реальные проблемы продукта, а не просто пользоваться
+              инструментами
+            </li>
+            <li>
+              автор курса и преподаватель — топовый эксперт в области автотестов
+            </li>
+          </ul>
+          <div class="actions">
+            <a
+              class="action"
+              href="https://forms.yandex.ru/surveys/13735178.a6336f46f189b6f4c2ac10354b4913d0da6e7b86/"
+              >Подать заявку</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="section"><div class="title">О Курсе</div></div>
+      <div class="section">
+        <div class="title">Программа курса</div>
+      </div>
+      <div class="section"><div class="title">Об авторе</div></div>
+      <div class="section"><div class="title">Отзывы</div></div>
+      <div class="section"><div class="title">FAQ</div></div>
+      <div class="section fp-auto-height">
+        <div class="footer">
+          <h1>My footer</h1>
+          <p>This could be my footer.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var myFullpage = new fullpage("#fullpage", {
+        navigationTooltips: [
+          "Курс — Автотесты PRO",
+          "О Курсе",
+          "Учебная программа",
+          "Об авторе",
+          "Отзывы",
+          "FAQ",
+        ],
+        navigation: true,
+        scrollBar: true,
+        licenseKey: "",
+      });
+    </script>
+  </body>
+</html>
